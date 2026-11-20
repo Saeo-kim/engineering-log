@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#161816" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="A personal journal for what I learn, written in my own words.">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Log">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="format-detection" content="telephone=no">
+  <title>Engineering Log</title>
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="/app.css">
+</head>
+<body>
+  <main id="app" class="app" aria-live="polite">
+    <p class="boot">Loading…</p>
+  </main>
+
+  <nav class="tabs" id="tabs" aria-label="Main" hidden>
+    <a href="#/notes" data-tab="notes">
+      <span class="tab-icon" aria-hidden="true">≡</span><span>Notes</span>
+    </a>
+    <a href="#/history" data-tab="history">
+      <span class="tab-icon" aria-hidden="true">◷</span><span>History</span>
+    </a>
+    <a href="#/write" data-tab="write" class="tab-write">
+      <span class="tab-plus" aria-hidden="true">+</span><span>Write</span>
+    </a>
+    <a href="#/topics" data-tab="topics">
+      <span class="tab-icon" aria-hidden="true">#</span><span>Topics</span>
+    </a>
+    <a href="#/account" data-tab="account">
+      <span class="tab-icon" aria-hidden="true">◯</span><span>Account</span>
+    </a>
+  </nav>
+
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
