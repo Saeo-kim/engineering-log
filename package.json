@@ -1,0 +1,14 @@
+{
+  "name": "engineering-log",
+  "version": "0.1.0",
+  "description": "Personal learning journal. Mobile-first PWA backed by SQLite.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/main.js",
+    "test": "node --disable-warning=ExperimentalWarning --test"
+  }
+}
